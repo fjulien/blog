@@ -1,7 +1,7 @@
-# i am a test
+# Duplication function map and filter for test callback
 
 ```javascript
-class Julien{
+class DuplicationMethod{
   constructor(arrayOfNumber) {
       this.arrayOfNumber = arrayOfNumber;
     }
@@ -30,19 +30,19 @@ class Julien{
 }
 
 const arrayNumbers = [1,2,3,4,5,6,7,8,9];
-const myArray = new Julien(arrayNumbers);
+const duplication = new DuplicationMethod(arrayNumbers);
 const condition = number => number === 5 || number === 4;
 const edit = number => "Hello word! : " + (number + 1000);
 
 /*
 Tests
 */
-console.info(myArray.filterByMe(condition).join("") === arrayNumbers.filter(condition).join(""));
-console.info(myArray.mapByMe(edit).join("") === arrayNumbers.map(edit).join(""));
+console.log(duplication.filterByMe(condition).join("") === arrayNumbers.filter(condition).join(""));
+console.log(duplication.mapByMe(edit).join("") === arrayNumbers.map(edit).join(""));
 
 /*
 Examples
 */
-console.log(myArray.filterByMe(condition));
-console.log(myArray.mapByMe(edit));
+console.log(duplication.filterByMe(condition));
+console.log(duplication.mapByMe(edit));
 ```
