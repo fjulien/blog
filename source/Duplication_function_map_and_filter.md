@@ -35,14 +35,18 @@ const condition = number => number === 5 || number === 4;
 const edit = number => "Hello word! : " + (number + 1000);
 
 /*
-Tests
-*/
-console.log("Duplication filter -> ", duplication.filterByMe(condition).join("") === arrayNumbers.filter(condition).join(""));
-console.log("Duplication map -> ", duplication.mapByMe(edit).join("") === arrayNumbers.map(edit).join(""));
-
-/*
 Examples
 */
 console.log("Result filter -> ", duplication.filterByMe(condition));
 console.log("Result map -> ", duplication.mapByMe(edit));
+
+/*
+Tests
+*/
+const isFiltred = duplication.filterByMe(condition).join("") === arrayNumbers.filter(condition).join("");
+const isMaped = duplication.mapByMe(edit).join("") === arrayNumbers.map(edit).join("");
+
+if(isFiltred) console.log("Duplication filter success");
+if(isMaped) console.log("Duplication map success");
+
 ```
