@@ -37,12 +37,12 @@ const edit = number => "Hello word! : " + (number + 1000);
 /*
 Tests
 */
-console.log(duplication.filterByMe(condition).join("") === arrayNumbers.filter(condition).join(""));
-console.log(duplication.mapByMe(edit).join("") === arrayNumbers.map(edit).join(""));
+console.log("Duplication filter -> ", duplication.filterByMe(condition).join("") === arrayNumbers.filter(condition).join(""));
+console.log("Duplication map -> ", duplication.mapByMe(edit).join("") === arrayNumbers.map(edit).join(""));
 
 /*
 Examples
 */
-console.log(duplication.filterByMe(condition));
-console.log(duplication.mapByMe(edit));
+console.log("Result filter -> ", duplication.filterByMe(condition));
+console.log("Result map -> ", duplication.mapByMe(edit));
 ```
