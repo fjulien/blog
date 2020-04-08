@@ -1,6 +1,6 @@
 # i am a test
 
-```js
+```javascript
 class Julien{
   constructor(arrayOfNumber) {
       this.arrayOfNumber = arrayOfNumber;
