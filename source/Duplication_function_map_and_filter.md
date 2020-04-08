@@ -35,12 +35,6 @@ const condition = number => number === 5 || number === 4;
 const edit = number => "Hello word! : " + (number + 1000);
 
 /*
-Examples
-*/
-console.log("Result filter -> ", duplication.filterByMe(condition));
-console.log("Result map -> ", duplication.mapByMe(edit));
-
-/*
 Tests
 */
 const isFiltred = duplication.filterByMe(condition).join("") === arrayNumbers.filter(condition).join("");
