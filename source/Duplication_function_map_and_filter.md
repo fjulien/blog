@@ -88,11 +88,11 @@ const duplicationArrayClass = new DuplicationArrayClass(arrayNumbers);
 const condition = number => number === 5 || number === 4;
 const edit = number => "Hello word! : " + (number + 1000);
 
-/*
-Tests
-*/
-const isFiltred = duplicationArrayClass.filterByMe(condition).join("") === arrayNumbers.filter(condition).join("");
-const isMaped = duplicationArrayClass.mapByMe(edit).join("") === arrayNumbers.map(edit).join("");
+//Tests
+const isFiltred = (duplicationArrayClass.filterByMe(condition).join("") 
+  === arrayNumbers.filter(condition).join(""));
+const isMaped = (duplicationArrayClass.mapByMe(edit).join("") 
+  === arrayNumbers.map(edit).join(""));
 
 if(isFiltred) console.log("Duplication filter success");
 if(isMaped) console.log("Duplication map success");
