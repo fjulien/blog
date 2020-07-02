@@ -42,6 +42,15 @@ function operationMaker(type){
 }
 
 //!\ Zone de test /!\
+const  subtraction = operationMaker("-");
+console.log( subtraction(7,5));
+const multiplying = operationMaker("*");
+console.log(multiplying(7,5));
+const adding = operationMaker("+");
+console.log(adding (7,5));
+const dividing = operationMaker("/");
+console.log(dividing(7,5));
+const dividing = operationMaker("ici");
 
-
+console.log(operationMaker("*")(7,3));
 ```
