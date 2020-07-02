@@ -50,7 +50,6 @@ const adding = operationMaker("+");
 console.log(adding (7,5));
 const dividing = operationMaker("/");
 console.log(dividing(7,5));
-const dividing = operationMaker("ici");
 
 console.log(operationMaker("*")(7,3));
 ```
