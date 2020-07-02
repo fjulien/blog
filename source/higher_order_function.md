@@ -2,9 +2,9 @@
 
 Définition:
 
-C'est une fonction qui reçoit une fonction en paramètre où retourne une nouvelle fonction.
+Une fonction d'ordre supérieur c'est tout simplement une fonction qui reçoit une fonction en paramètre où retourne une fonction.
 
-## Fonction en paramètre - Le nouveau filter
+## Avec une fonction en paramètre - Le nouveau filter
 
 Je vais prendre un exemple avec une fonction filter bien connut, au lieu de retourné un table qui retounée les élèments vrai, elle va retourner les deux tableaux. La nous sommes dans le cas ou la fonction va prendre en parametre une autre fonction.
 
@@ -30,20 +30,21 @@ function isEvenNumber(nb){
 console.log(isFalseList);
 console.log(isTrueList);
 ```
-## Fonction en sortie - Le créateur d'opérations
+## Avec une fonction retourné - Le créateur d'opérations
 
-Maintenant je vais créer une function qui va permetre de retourner une nouvelle fonction pour créer une opération que l'on souhaite.
+Maintenant je vais créer une function qui va permetre de retourner une nouvelle fonction pour créer une opération mathématique simple.
 
 ```javascript
-const operations = ["+", "-", "/", "*"];
+const operations = ["+", "-", "/", "*"]; // Liste des opérations que j'authorise
 function operationMaker(type){ 
-  if(operations.some(el=> el === type )) return (nb1 ,nb2) => eval(nb1 + type + nb2); 
+  if(operations.some(el=> el === type )) return (nb1 ,nb2) => eval(nb1 + type + nb2); // Si on selection la bonne opération, la fonction nous retoune une nouvelle fonction
   throw("Error type");
 }
 
 //!\ Zone de test /!\
-const  subtraction = operationMaker("-");
+const subtraction = operationMaker("-"); // Ici on retourne une soustraction à la variable "subtraction" qu'on peut utilisé plus loin comme fonction
 console.log( subtraction(7,5));
+// D'autre exemples
 const multiplying = operationMaker("*");
 console.log(multiplying(7,5));
 const adding = operationMaker("+");
@@ -51,5 +52,8 @@ console.log(adding (7,5));
 const dividing = operationMaker("/");
 console.log(dividing(7,5));
 
-console.log(operationMaker("*")(7,3));
+console.log(operationMaker("*")(7,3)); // Pour ce cas on n'affecte pas la fonction retournée mais on l'exectue directement, d'ou la syntaxe function()();
 ```
+## Conclution
+
+Ce n'est pas très compliqué finalement!
