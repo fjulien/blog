@@ -4,7 +4,7 @@ Définition:
 
 C'est une fonction qui reçoit une fonction en paramètre où retourne une nouvelle fonction.
 
-## Le nouveau filter
+## Fonction en paramètre - Le nouveau filter
 
 Je vais prendre un exemple avec une fonction filter bien connut, au lieu de retourné un table qui retounée les élèments vrai, elle va retourner les deux tableaux. La nous sommes dans le cas ou la fonction va prendre en parametre une autre fonction.
 
@@ -27,7 +27,7 @@ let isFalseList, isTrueList;
 [isFalseList, isTrueList] = myFilter(listNumbers, isEvenNumber);
 [isFalseList, isTrueList] = myFilter(listNumbers, nb => nb%2 === 0);
 ```
-## Le créateur d'opération
+## Fonction en sortie - Le créateur d'opération
 
 Maintenant je vais créer une function qui va permetre de retourner une nouvelle fonction pour créer une opération que l'on souhaire.
 
