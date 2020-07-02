@@ -17,15 +17,18 @@ function myFilter(arr, func){
   return result;
 }
 
-function isEvenNumber(nb){
-  return nb%2 === 0
-}
-
+//!\ Zone de test /!\
 const listNumbers = [1,2,3,4,5,6,7,8,9];
 let isFalseList, isTrueList;
 
+function isEvenNumber(nb){
+  return nb%2 === 0
+}
 [isFalseList, isTrueList] = myFilter(listNumbers, isEvenNumber);
+
 [isFalseList, isTrueList] = myFilter(listNumbers, nb => nb%2 === 0);
+console.log("isFalseList", isFalseList);
+console.log("isTrueList", isTrueList);
 ```
 ## Fonction en sortie - Le créateur d'opérations
 
@@ -37,4 +40,8 @@ function operationMaker(type){
   if(operations.some(el=> el === type )) return (nb1 ,nb2) => eval(nb1 + type + nb2); 
   throw("Error type");
 }
+
+//!\ Zone de test /!\
+
+
 ```
