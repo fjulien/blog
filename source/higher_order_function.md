@@ -27,9 +27,9 @@ let isFalseList, isTrueList;
 [isFalseList, isTrueList] = myFilter(listNumbers, isEvenNumber);
 [isFalseList, isTrueList] = myFilter(listNumbers, nb => nb%2 === 0);
 ```
-## Fonction en sortie - Le créateur d'opération
+## Fonction en sortie - Le créateur d'opérations
 
-Maintenant je vais créer une function qui va permetre de retourner une nouvelle fonction pour créer une opération que l'on souhaire.
+Maintenant je vais créer une function qui va permetre de retourner une nouvelle fonction pour créer une opération que l'on souhaite.
 
 ```javascript
 const operations = ["+", "-", "/", "*"];
