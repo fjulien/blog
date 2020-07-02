@@ -27,8 +27,8 @@ function isEvenNumber(nb){
 [isFalseList, isTrueList] = myFilter(listNumbers, isEvenNumber);
 
 [isFalseList, isTrueList] = myFilter(listNumbers, nb => nb%2 === 0);
-console.log("isFalseList", isFalseList);
-console.log("isTrueList", isTrueList);
+console.log(isFalseList);
+console.log(isTrueList);
 ```
 ## Fonction en sortie - Le créateur d'opérations
 
