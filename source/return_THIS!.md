@@ -4,7 +4,7 @@ La petite astuce du jour est sur ce fameux THIS! Dans une class, qu'est ce qu'il
 
 ```javascript
 class Computer {
-  name = "Super Computor";
+  name = "Super Computer";
   
   start(){
     console.log("start");
@@ -16,7 +16,7 @@ class Computer {
   }
 }
 
-const newComputor = new Computor();
-newComputor.start().showWindow();
+const newComputer = new Computer();
+newComputer.start().showWindow();
 
 ```
