@@ -2,7 +2,7 @@
 
 La petite astuce du jour est sur ce fameux THIS! Dans une class, qu'est ce qu'il se passe quand on retourne THIS à la fin d'une méthode?
 
-```javascript
+```rust
 class InspectorGadget {
   
   static goGoGadgetHelicopter(){
